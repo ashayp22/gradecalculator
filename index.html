@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <script src = "script.js"></script>
+</head>
+<body>
+<h1>D211 GRADE CALCULATOR</h1>
+<p>by Ashay P and Rohan S</p>
+<hr align="left" width="100%">
+
+<!--First Part -->
+
+<h2>Infinite Campus Notification Grade or Letter Grade:</h2>
+<p>*letter grades will not be as accurate as a percent</p>
+<input type="text" id ="userGrade" maxlength="3">
+<h2>Final Grade Weight (D211 Classes are usually 20):</h2>
+<input type="text" id ="FinalWeight" maxlength="2">
+<h2>Desired Grade Percent in the class:</h2>
+<p id = "small">*enter without decimal or percent signs</p>
+<input type="text" id ="desiredGrade" maxlength="3" >
+<button onclick = "campusCalc()">calculate</button>
+<h2 id = "Real Text"></h2>
+<h2 id = "Final Text"></h2>
+<br>
+
+
+
+<!--Second Part -->
+
+
+<hr align="left" width="100%">
+
+<h2>Enter current assignments and their grades to experiment with future grades</h2>
+<div id = "Classes">
+    <p id = 't1'>Class Name:</p>
+    <input type = "text" id = "class" value = "">
+    <button onclick = "setCategory('class', 0)">Set</button>
+    <button onclick = "reset()">Reset</button>
+</div>
+
+<h2>Each category is a type of grade, such as homework, quizzes and tests. Name each category, add its weight, and enter each assignment below</h2>
+<h2>For the grade, enter in letter format </h2>
+<h2>For the points, enter the multiplier * pts possible</h2>
+
+<div id = "p1">
+    <p id = "tn1">First Category</p>
+    <input type = "text" id = "p1name" value = "">
+    <button onclick = "setCategory('name', 1)">Set</button>
+
+    <p id = "tw1">Weight - Enter without decimal</p>
+    <input type = "text" id = "p1weight" value = "" maxlength="4">
+    <button onclick = "setCategory('weight', 1)">Set</button>
+
+    <hr align="left" width="100%">
+
+    <p>Grade - Enter as letter</p>
+    <input type = "text" id = "p1grade" value = "" maxlength="2">
+
+    <p>Points</p>
+    <input type = "text" id = "p1points" value = "">
+
+    <button onclick = "addGrade(1)">Add</button>
+    <p id = "text1"></p>
+    <button onclick = "remove(1)">Remove</button>
+</div>
+
+<div id = "p2">
+    <p id = "tn2">Second Category</p>
+    <input type = "text" id = "p2name" value = "">
+    <button onclick = "setCategory('name', 2)">Set</button>
+
+    <p id = "tw2">Weight - Enter without decimal</p>
+    <input type = "text" id = "p2weight" value = "" maxlength="4">
+    <button onclick = "setCategory('weight', 2)">Set</button>
+
+    <hr align="left" width="100%">
+
+    <p>Grade - Enter as letter</p>
+    <input type = "text" id = "p2grade" value = "" maxlength="2">
+
+    <p>Points</p>
+    <input type = "text" id = "p2points" value = "">
+
+    <button onclick = "addGrade(2)">Add</button>
+    <p id = "text2"></p>
+    <button onclick = "remove(2)">Remove</button>
+</div>
+
+<div id = "p3">
+    <p id = "tn3">Third Category</p>
+    <input type = "text" id = "p3name" value = "">
+    <button onclick = "setCategory('name', 3)">Set</button>
+
+    <p id = "tw3">Weight - Enter without decimal</p>
+    <input type = "text" id = "p3weight" value = "" maxlength="4">
+    <button onclick = "setCategory('weight', 3)">Set</button>
+
+    <hr align="left" width="100%">
+
+    <p>Grade - Enter as letter</p>
+    <input type = "text" id = "p3grade" value = "" maxlength="2">
+
+    <p>Points</p>
+    <input type = "text" id = "p3points" value = "">
+
+    <button onclick = "addGrade(3)">Add</button>
+    <p id = "text3"></p>
+    <button onclick = "remove(3)">Remove</button>
+</div>
+
+<div id = "p4">
+    <p id = "tn4">Fourth Category</p>
+    <input type = "text" id = "p4name" value = "">
+    <button onclick = "setCategory('name', 4)">Set</button>
+
+    <p id = "tw4">Weight - Enter without decimal</p>
+    <input type = "text" id = "p4weight" value = "" maxlength="4">
+    <button onclick = "setCategory('weight', 4)">Set</button>
+
+    <hr align="left" width="100%">
+
+    <p>Grade - Enter as letter</p>
+    <input type = "text" id = "p4grade" value = "" maxlength="2">
+
+    <p>Points</p>
+    <input type = "text" id = "p4points" value = "">
+
+    <button onclick = "addGrade(4)">Add</button>
+    <p id = "text4"></p>
+    <button onclick = "remove(4)">Remove</button>
+</div>
+
+
+<h1 id = "finalGrade">Grade:</h1>
+<h2 id = "closeText"></h2>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: white;
+
+
+}
+
+
+#Classes {
+    padding: 8px 12px 8px 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+
+
+#p1 {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#p2 {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#p3 {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#p4 {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px 8px 12px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #2873d3;
+    border: none;
+    font-size: 20px;
+}
+
+p {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 65px;
+    text-shadow: 2px 2px black;
+}
+
+h1:hover {
+    color: aliceblue;
+    text-shadow: 2px 2px #2873d3;
+}
+
+
+.button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 8px 12px 8px 12px;
+    background-color: white;
+    border-radius: 10px;
+    color: #2873d3;
+    border: none;
+    font-size: 20px;
+}
+#small {
+    font-size: 25px;
+}
+
+#Real Text, #Final Text {
+    font-size: 65px;
+}
+
